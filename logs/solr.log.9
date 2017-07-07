@@ -1,0 +1,174 @@
+2017-01-14 17:37:48.522 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
+2017-01-14 17:37:49.250 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.3.0
+2017-01-14 17:37:49.252 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-01-14 17:37:49.252 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /opt/solr
+2017-01-14 17:37:49.400 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-01-14T17:37:49.256Z
+2017-01-14 17:37:49.401 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-01-14 17:37:49.434 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /var/solr/data
+2017-01-14 17:37:49.442 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /var/solr/data/solr.xml
+2017-01-14 17:37:50.269 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-01-14 17:37:50.378 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 3 core definitions underneath /var/solr/data
+2017-01-14 17:37:50.394 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [car_detail, car, area]
+2017-01-14 17:37:50.413 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader [null] Added 1 libs to classloader, from paths: [/var/solr/data/car/lib]
+2017-01-14 17:37:50.416 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader [null] Added 1 libs to classloader, from paths: [/var/solr/data/area/lib]
+2017-01-14 17:37:50.416 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [null] Added 1 libs to classloader, from paths: [/var/solr/data/car_detail/lib]
+2017-01-14 17:37:50.498 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@fff8397{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2017-01-14 17:37:50.499 INFO  (main) [   ] o.e.j.s.Server Started @3026ms
+2017-01-14 17:37:51.151 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader [car] Added 46 libs to classloader, from paths: [/opt/solr/contrib/extraction/lib, /opt/solr/contrib/langid/lib, /opt/solr/contrib/velocity/lib, /opt/solr/dist]
+2017-01-14 17:37:51.153 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [car_detail] Added 46 libs to classloader, from paths: [/opt/solr/contrib/extraction/lib, /opt/solr/contrib/langid/lib, /opt/solr/contrib/velocity/lib, /opt/solr/dist]
+2017-01-14 17:37:51.155 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader [area] Added 46 libs to classloader, from paths: [/opt/solr/contrib/extraction/lib, /opt/solr/contrib/langid/lib, /opt/solr/contrib/velocity/lib, /opt/solr/dist]
+2017-01-14 17:37:51.428 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2017-01-14 17:37:51.438 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.3.0
+2017-01-14 17:37:51.445 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.3.0
+2017-01-14 17:37:51.452 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.3.0
+2017-01-14 17:37:52.444 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [car] Schema name=example-data-driven-schema
+2017-01-14 17:37:52.445 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema [area] Schema name=example-data-driven-schema
+2017-01-14 17:37:52.451 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [car_detail] Schema name=example-data-driven-schema
+2017-01-14 17:37:54.775 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-01-14 17:37:54.782 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-01-14 17:37:54.792 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-01-14 17:37:54.995 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'car_detail' using configuration from instancedir /var/solr/data/car_detail
+2017-01-14 17:37:54.996 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'car' using configuration from instancedir /var/solr/data/car
+2017-01-14 17:37:54.997 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.CoreContainer Creating SolrCore 'area' using configuration from instancedir /var/solr/data/area
+2017-01-14 17:37:55.103 INFO  (coreLoadExecutor-6-thread-3) [   x:area] o.a.s.c.SolrCore [[area] ] Opening new SolrCore at [/var/solr/data/area], dataDir=[/var/solr/data/area/data/]
+2017-01-14 17:37:55.104 INFO  (coreLoadExecutor-6-thread-1) [   x:car_detail] o.a.s.c.SolrCore [[car_detail] ] Opening new SolrCore at [/var/solr/data/car_detail], dataDir=[/var/solr/data/car_detail/data/]
+2017-01-14 17:37:55.118 INFO  (coreLoadExecutor-6-thread-2) [   x:car] o.a.s.c.SolrCore [[car] ] Opening new SolrCore at [/var/solr/data/car], dataDir=[/var/solr/data/car/data/]
+2017-01-14 17:37:55.219 INFO  (coreLoadExecutor-6-thread-1) [   x:car_detail] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-01-14 17:37:55.224 INFO  (coreLoadExecutor-6-thread-2) [   x:car] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-01-14 17:37:55.220 INFO  (coreLoadExecutor-6-thread-3) [   x:area] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-01-14 17:37:56.102 INFO  (coreLoadExecutor-6-thread-3) [   x:area] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-01-14 17:37:56.115 INFO  (coreLoadExecutor-6-thread-3) [   x:area] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-01-14 17:37:56.119 INFO  (coreLoadExecutor-6-thread-1) [   x:car_detail] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-01-14 17:37:56.122 INFO  (coreLoadExecutor-6-thread-1) [   x:car_detail] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-01-14 17:37:56.132 INFO  (coreLoadExecutor-6-thread-2) [   x:car] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-01-14 17:37:56.133 INFO  (coreLoadExecutor-6-thread-2) [   x:car] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-01-14 17:37:56.149 INFO  (coreLoadExecutor-6-thread-3) [   x:area] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-01-14 17:37:56.149 INFO  (coreLoadExecutor-6-thread-3) [   x:area] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-01-14 17:37:56.173 INFO  (coreLoadExecutor-6-thread-1) [   x:car_detail] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-01-14 17:37:56.180 INFO  (coreLoadExecutor-6-thread-1) [   x:car_detail] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-01-14 17:37:56.168 INFO  (coreLoadExecutor-6-thread-2) [   x:car] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-01-14 17:37:56.181 INFO  (coreLoadExecutor-6-thread-2) [   x:car] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-01-14 17:37:56.301 INFO  (coreLoadExecutor-6-thread-3) [   x:area] o.a.s.s.SolrIndexSearcher Opening [Searcher@656ff5e5[area] main]
+2017-01-14 17:37:56.337 INFO  (coreLoadExecutor-6-thread-3) [   x:area] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/solr/data/area/conf
+2017-01-14 17:37:56.345 INFO  (coreLoadExecutor-6-thread-2) [   x:car] o.a.s.s.SolrIndexSearcher Opening [Searcher@5b4bdbd[car] main]
+2017-01-14 17:37:56.353 INFO  (coreLoadExecutor-6-thread-2) [   x:car] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/solr/data/car/conf
+2017-01-14 17:37:56.379 INFO  (coreLoadExecutor-6-thread-1) [   x:car_detail] o.a.s.s.SolrIndexSearcher Opening [Searcher@447c2d84[car_detail] main]
+2017-01-14 17:37:56.385 INFO  (coreLoadExecutor-6-thread-1) [   x:car_detail] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/solr/data/car_detail/conf
+2017-01-14 17:37:56.391 INFO  (coreLoadExecutor-6-thread-3) [   x:area] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-01-14 17:37:56.400 INFO  (coreLoadExecutor-6-thread-1) [   x:car_detail] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-01-14 17:37:56.396 INFO  (coreLoadExecutor-6-thread-2) [   x:car] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-01-14 17:37:56.416 INFO  (coreLoadExecutor-6-thread-3) [   x:area] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-01-14 17:37:56.417 INFO  (coreLoadExecutor-6-thread-2) [   x:car] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-01-14 17:37:56.418 INFO  (coreLoadExecutor-6-thread-1) [   x:car_detail] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-01-14 17:37:56.436 INFO  (coreLoadExecutor-6-thread-1) [   x:car_detail] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /var/solr/data/car_detail/conf/elevate.xml
+2017-01-14 17:37:56.436 INFO  (coreLoadExecutor-6-thread-3) [   x:area] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /var/solr/data/area/conf/elevate.xml
+2017-01-14 17:37:56.483 INFO  (coreLoadExecutor-6-thread-2) [   x:car] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2017-01-14 17:37:56.504 INFO  (coreLoadExecutor-6-thread-1) [   x:car_detail] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-01-14 17:37:56.508 INFO  (coreLoadExecutor-6-thread-3) [   x:area] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-01-14 17:37:56.517 INFO  (coreLoadExecutor-6-thread-2) [   x:car] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-01-14 17:37:56.585 INFO  (searcherExecutor-8-thread-1-processing-x:area) [   x:area] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@656ff5e5[area] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-01-14 17:37:56.585 INFO  (searcherExecutor-8-thread-1-processing-x:area) [   x:area] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-01-14 17:37:56.585 INFO  (searcherExecutor-8-thread-1-processing-x:area) [   x:area] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-01-14 17:37:56.586 INFO  (searcherExecutor-8-thread-1-processing-x:area) [   x:area] o.a.s.c.SolrCore [area] Registered new searcher Searcher@656ff5e5[area] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-01-14 17:37:56.602 INFO  (coreLoadExecutor-6-thread-3) [   x:area] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1556522442793418752
+2017-01-14 17:37:56.612 INFO  (searcherExecutor-7-thread-1-processing-x:car_detail) [   x:car_detail] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@447c2d84[car_detail] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_b(6.3.0):C3)))}
+2017-01-14 17:37:56.628 INFO  (searcherExecutor-7-thread-1-processing-x:car_detail) [   x:car_detail] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-01-14 17:37:56.628 INFO  (searcherExecutor-7-thread-1-processing-x:car_detail) [   x:car_detail] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-01-14 17:37:56.628 INFO  (searcherExecutor-7-thread-1-processing-x:car_detail) [   x:car_detail] o.a.s.c.SolrCore [car_detail] Registered new searcher Searcher@447c2d84[car_detail] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_b(6.3.0):C3)))}
+2017-01-14 17:37:56.645 INFO  (coreLoadExecutor-6-thread-2) [   x:car] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-01-14 17:37:56.646 INFO  (coreLoadExecutor-6-thread-2) [   x:car] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@71d7ba90, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2017-01-14 17:37:56.650 INFO  (coreLoadExecutor-6-thread-2) [   x:car] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /var/solr/data/car/conf/elevate.xml
+2017-01-14 17:37:56.687 INFO  (coreLoadExecutor-6-thread-2) [   x:car] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-01-14 17:37:56.708 INFO  (searcherExecutor-9-thread-1-processing-x:car) [   x:car] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5b4bdbd[car] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(6.3.0):C1)))}
+2017-01-14 17:37:56.841 INFO  (searcherExecutor-9-thread-1-processing-x:car) [   x:car] o.a.s.c.S.Request [car]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=131
+2017-01-14 17:37:56.842 INFO  (searcherExecutor-9-thread-1-processing-x:car) [   x:car] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-01-14 17:37:56.842 INFO  (searcherExecutor-9-thread-1-processing-x:car) [   x:car] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-01-14 17:37:56.842 INFO  (searcherExecutor-9-thread-1-processing-x:car) [   x:car] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2017-01-14 17:37:56.842 INFO  (searcherExecutor-9-thread-1-processing-x:car) [   x:car] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2017-01-14 17:37:56.843 INFO  (searcherExecutor-9-thread-1-processing-x:car) [   x:car] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2017-01-14 17:37:56.885 INFO  (searcherExecutor-9-thread-1-processing-x:car) [   x:car] o.a.s.c.SolrCore [car] Registered new searcher Searcher@5b4bdbd[car] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(6.3.0):C1)))}
+2017-01-14 17:38:04.924 INFO  (qtp1528637575-11) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415482628} status=0 QTime=1
+2017-01-14 17:38:04.971 INFO  (qtp1528637575-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415482629} status=0 QTime=54
+2017-01-14 17:38:05.040 INFO  (qtp1528637575-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415482629} status=0 QTime=14
+2017-01-14 17:38:07.394 INFO  (qtp1528637575-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415482628} status=0 QTime=10
+2017-01-14 17:38:07.409 INFO  (qtp1528637575-17) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1484415482629&ts=1484415482629} status=503 QTime=17
+2017-01-14 17:38:07.411 INFO  (qtp1528637575-19) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/replication params={wt=json&command=details&_=1484415485272} status=0 QTime=21
+2017-01-14 17:38:07.412 INFO  (qtp1528637575-18) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1484415485272} status=0 QTime=22
+2017-01-14 17:38:07.444 INFO  (qtp1528637575-14) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/system params={wt=json&_=1484415485272} status=0 QTime=54
+2017-01-14 17:38:07.450 INFO  (qtp1528637575-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415482629} status=0 QTime=64
+2017-01-14 17:38:08.300 INFO  (qtp1528637575-11) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415482628} status=0 QTime=0
+2017-01-14 17:38:08.309 INFO  (qtp1528637575-20) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1484415486183} status=0 QTime=4
+2017-01-14 17:38:08.320 INFO  (qtp1528637575-11) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415482629} status=0 QTime=19
+2017-01-14 17:38:08.361 INFO  (qtp1528637575-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415482628} status=0 QTime=0
+2017-01-14 17:38:08.366 INFO  (qtp1528637575-18) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1484415486183} status=0 QTime=0
+2017-01-14 17:38:08.394 INFO  (qtp1528637575-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415482629} status=0 QTime=31
+2017-01-14 17:38:15.941 INFO  (qtp1528637575-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415482628} status=0 QTime=0
+2017-01-14 17:38:15.952 INFO  (qtp1528637575-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1484415493829&since=0} status=0 QTime=9
+2017-01-14 17:38:15.964 INFO  (qtp1528637575-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415482629} status=0 QTime=25
+2017-01-14 17:38:18.801 INFO  (qtp1528637575-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415482628} status=0 QTime=0
+2017-01-14 17:38:18.815 INFO  (qtp1528637575-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1484415482628} status=0 QTime=10
+2017-01-14 17:38:18.828 INFO  (qtp1528637575-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415482629} status=0 QTime=25
+2017-01-14 17:38:18.890 INFO  (qtp1528637575-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415482628} status=0 QTime=0
+2017-01-14 17:38:18.903 INFO  (qtp1528637575-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1484415482628} status=0 QTime=22
+2017-01-14 17:38:18.931 INFO  (qtp1528637575-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415482629} status=0 QTime=35
+2017-01-14 17:38:22.069 INFO  (qtp1528637575-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415482628} status=0 QTime=0
+2017-01-14 17:38:22.079 INFO  (qtp1528637575-19) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/replication params={wt=json&command=details&_=1484415485272} status=0 QTime=1
+2017-01-14 17:38:22.085 INFO  (qtp1528637575-15) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1484415482629&ts=1484415482629} status=503 QTime=0
+2017-01-14 17:38:22.089 INFO  (qtp1528637575-17) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1484415485272} status=0 QTime=0
+2017-01-14 17:38:22.114 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415482629} status=0 QTime=27
+2017-01-14 17:38:22.121 INFO  (qtp1528637575-13) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/system params={wt=json&_=1484415485272} status=0 QTime=40
+2017-01-14 17:38:23.445 INFO  (qtp1528637575-11) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415482628} status=0 QTime=0
+2017-01-14 17:38:23.454 INFO  (qtp1528637575-15) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1484415486183} status=0 QTime=11
+2017-01-14 17:38:23.468 INFO  (qtp1528637575-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415482629} status=0 QTime=24
+2017-01-14 17:38:23.510 INFO  (qtp1528637575-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415482628} status=0 QTime=1
+2017-01-14 17:38:23.522 INFO  (qtp1528637575-19) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1484415486183} status=0 QTime=1
+2017-01-14 17:38:23.544 INFO  (qtp1528637575-11) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415482629} status=0 QTime=35
+2017-01-14 17:38:39.034 INFO  (qtp1528637575-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415516658} status=0 QTime=0
+2017-01-14 17:38:39.122 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415516658} status=0 QTime=85
+2017-01-14 17:38:39.151 INFO  (qtp1528637575-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415516658} status=0 QTime=16
+2017-01-14 17:38:39.524 INFO  (qtp1528637575-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415517243} status=0 QTime=3
+2017-01-14 17:38:39.553 INFO  (qtp1528637575-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415517243} status=0 QTime=32
+2017-01-14 17:38:39.589 INFO  (qtp1528637575-11) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415517243} status=0 QTime=12
+2017-01-14 17:39:46.656 INFO  (qtp1528637575-11) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415517243} status=0 QTime=1
+2017-01-14 17:39:46.685 INFO  (qtp1528637575-17) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1484415517243&ts=1484415517243} status=503 QTime=33
+2017-01-14 17:39:46.677 INFO  (qtp1528637575-20) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1484415584508} status=0 QTime=14
+2017-01-14 17:39:46.703 INFO  (qtp1528637575-15) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/replication params={wt=json&command=details&_=1484415584508} status=0 QTime=1
+2017-01-14 17:39:46.749 INFO  (qtp1528637575-18) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/system params={wt=json&_=1484415584508} status=0 QTime=78
+2017-01-14 17:39:46.755 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415517243} status=0 QTime=96
+2017-01-14 17:39:48.044 INFO  (qtp1528637575-16) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/file params={wt=json&_=1484415585906} status=0 QTime=1
+2017-01-14 17:39:48.044 INFO  (qtp1528637575-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415517243} status=0 QTime=12
+2017-01-14 17:39:48.061 INFO  (qtp1528637575-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415517243} status=0 QTime=27
+2017-01-14 17:39:48.084 INFO  (qtp1528637575-11) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1484415585906} status=0 QTime=2
+2017-01-14 17:39:56.564 INFO  (qtp1528637575-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415517243} status=0 QTime=0
+2017-01-14 17:39:56.575 INFO  (qtp1528637575-15) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/file params={file=solrconfig.xml&contentType=text/xml;charset%3Dutf-8&wt=json&_=1484415585906} status=0 QTime=1
+2017-01-14 17:39:56.578 INFO  (qtp1528637575-14) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/file params={wt=json&_=1484415585906} status=0 QTime=1
+2017-01-14 17:39:56.593 INFO  (qtp1528637575-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415517243} status=0 QTime=27
+2017-01-14 17:39:56.606 INFO  (qtp1528637575-18) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1484415585906} status=0 QTime=1
+2017-01-14 17:39:59.161 INFO  (qtp1528637575-17) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/file params={file=solrconfig.xml&wt=json&contentType=text/xml;charset%3Dutf-8&_=1484415585906} status=0 QTime=0
+2017-01-14 17:40:26.823 INFO  (qtp1528637575-13) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/file params={wt=json&_=1484415624702} status=0 QTime=2
+2017-01-14 17:40:26.829 INFO  (qtp1528637575-19) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/file params={file=solrconfig.xml&contentType=text/xml;charset%3Dutf-8&wt=json&_=1484415624702} status=0 QTime=0
+2017-01-14 17:40:26.844 INFO  (qtp1528637575-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415624446} status=0 QTime=25
+2017-01-14 17:40:26.871 INFO  (qtp1528637575-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415624447} status=0 QTime=45
+2017-01-14 17:40:26.963 INFO  (qtp1528637575-15) [   x:area] o.a.s.c.S.Request [area]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1484415624702} status=0 QTime=5
+2017-01-14 17:40:30.229 INFO  (qtp1528637575-17) [   x:car_detail] o.a.s.c.S.Request [car_detail]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1484415624447&ts=1484415624447} status=503 QTime=0
+2017-01-14 17:40:30.237 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415624446} status=0 QTime=19
+2017-01-14 17:40:30.242 INFO  (qtp1528637575-11) [   x:car_detail] o.a.s.c.S.Request [car_detail]  webapp=/solr path=/replication params={wt=json&command=details&_=1484415628105} status=0 QTime=21
+2017-01-14 17:40:30.244 INFO  (qtp1528637575-18) [   x:car_detail] o.a.s.c.S.Request [car_detail]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1484415628105} status=0 QTime=23
+2017-01-14 17:40:30.274 INFO  (qtp1528637575-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415624447} status=0 QTime=53
+2017-01-14 17:40:30.296 INFO  (qtp1528637575-19) [   x:car_detail] o.a.s.c.S.Request [car_detail]  webapp=/solr path=/admin/system params={wt=json&_=1484415628105} status=0 QTime=70
+2017-01-14 17:40:31.839 INFO  (qtp1528637575-17) [   x:car_detail] o.a.s.c.S.Request [car_detail]  webapp=/solr path=/admin/file params={wt=json&_=1484415624702} status=0 QTime=1
+2017-01-14 17:40:31.845 INFO  (qtp1528637575-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415624446} status=0 QTime=0
+2017-01-14 17:40:31.866 INFO  (qtp1528637575-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415624447} status=0 QTime=25
+2017-01-14 17:40:31.878 INFO  (qtp1528637575-13) [   x:car_detail] o.a.s.c.S.Request [car_detail]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1484415624702} status=0 QTime=2
+2017-01-14 17:40:34.496 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484415624446} status=0 QTime=0
+2017-01-14 17:40:34.501 INFO  (qtp1528637575-11) [   x:car_detail] o.a.s.c.S.Request [car_detail]  webapp=/solr path=/admin/file params={file=solrconfig.xml&contentType=text/xml;charset%3Dutf-8&wt=json&_=1484415624702} status=0 QTime=0
+2017-01-14 17:40:34.503 INFO  (qtp1528637575-11) [   x:car_detail] o.a.s.c.S.Request [car_detail]  webapp=/solr path=/admin/file params={wt=json&_=1484415624702} status=0 QTime=0
+2017-01-14 17:40:34.526 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484415624447} status=0 QTime=28
+2017-01-14 17:40:34.531 INFO  (qtp1528637575-18) [   x:car_detail] o.a.s.c.S.Request [car_detail]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1484415624702} status=0 QTime=2
+2017-01-14 17:40:37.571 INFO  (qtp1528637575-20) [   x:car_detail] o.a.s.c.S.Request [car_detail]  webapp=/solr path=/admin/file params={file=solrconfig.xml&wt=json&contentType=text/xml;charset%3Dutf-8&_=1484415624702} status=0 QTime=0
+2017-01-14 17:42:26.016 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@fff8397{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2017-01-14 17:42:26.025 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=260840925
+2017-01-14 17:42:26.041 INFO  (coreCloseExecutor-22-thread-1) [   x:area] o.a.s.c.SolrCore [area]  CLOSING SolrCore org.apache.solr.core.SolrCore@4ec87498
+2017-01-14 17:42:26.043 INFO  (coreCloseExecutor-22-thread-2) [   x:car_detail] o.a.s.c.SolrCore [car_detail]  CLOSING SolrCore org.apache.solr.core.SolrCore@1e4d0e09
+2017-01-14 17:42:26.050 INFO  (coreCloseExecutor-22-thread-3) [   x:car] o.a.s.c.SolrCore [car]  CLOSING SolrCore org.apache.solr.core.SolrCore@71d7ba90
+2017-01-14 17:42:26.136 WARN  (ShutdownMonitor) [   ] o.e.j.s.ServletContextHandler ServletContextHandler.setHandler should not be called directly. Use insertHandler or setSessionHandler etc.

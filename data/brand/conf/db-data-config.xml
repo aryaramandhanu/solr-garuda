@@ -1,0 +1,48 @@
+<dataConfig>
+    <dataSource driver="com.mysql.jdbc.Driver" 
+		url="jdbc:mysql://localhost:3306/gabir" 
+		user="root" 
+		password="G4rudacl0ud" 
+    />
+    <document>
+        <entity name="area" 
+		query="SELECT 
+  a.car_id AS id,
+  a.`car_parent_id`,
+  a.`car_name`,
+  a.`car_type_id`,
+  a.`car_year`,
+  b.`car_type_name` 
+FROM
+  car AS a 
+  LEFT JOIN car_type AS b 
+    ON a.`car_type_id` = b.`car_type_id` 
+WHERE a.`is_active` = 1 " 
+	        deltaImportQuer="SELECT 
+  a.car_id AS id,
+  a.`car_parent_id`,
+  a.`car_name`,
+  a.`car_type_id`,
+  a.`car_year`,
+  b.`car_type_name` 
+FROM
+  car AS a 
+  LEFT JOIN car_type AS b 
+    ON a.`car_type_id` = b.`car_type_id` 
+WHERE a.`is_active` = 1 " 
+		deltaQuery="SELECT 
+  a.car_id AS id,
+  a.`car_parent_id`,
+  a.`car_name`,
+  a.`car_type_id`,
+  a.`car_year`,
+  b.`car_type_name` 
+FROM
+  car AS a 
+  LEFT JOIN car_type AS b 
+    ON a.`car_type_id` = b.`car_type_id` 
+WHERE a.`is_active` = 1 ">
+		</entity>
+    </document>
+</dataConfig>
+

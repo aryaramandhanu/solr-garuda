@@ -1,0 +1,108 @@
+<dataConfig>
+    <dataSource driver="com.mysql.jdbc.Driver" 
+		url="jdbc:mysql://localhost:3306/gabir" 
+		user="root" 
+		password="G4rudacl0ud" 
+    />
+    <document>
+        <entity name="car" 
+				query="SELECT 
+  c.`car_detail_id` AS id,
+  a.`car_name`,
+  a.car_id,
+  a.`car_type_id`,
+  a.`car_year`,
+  a.`default_price`,
+  a.`car_image`,
+  a.flag_with_bbm,
+  a.flag_with_driver,
+  a.seat,
+  a.is_have_ac,
+  a.is_have_radio,
+  a.is_have_baggage,
+  b.`car_type_name`,
+  c.`nopol`,
+  c.`car_color`,
+  e.`driver_id`,
+  e.`driver_name`,
+  e.`driver_photo`,
+  e.`phone_number`
+FROM
+  car AS a 
+  INNER JOIN car_type AS b 
+    ON a.`car_type_id` = b.`car_type_id` 
+  LEFT JOIN car_detail AS c 
+    ON a.`car_id` = c.`car_id`
+    LEFT JOIN car_driver_relation AS d ON c.`car_detail_id` = d.`car_detail_id`
+    LEFT JOIN driver AS e ON d.`driver_id` = e.`driver_id`
+WHERE a.`is_active` = 1 
+  AND c.is_active = 1 
+  AND d.is_booked = 0" 
+				deltaImportQuery="SELECT 
+  c.`car_detail_id` AS id,
+  a.`car_name`,
+  a.car_id,
+  a.`car_type_id`,
+  a.`car_year`,
+  a.`default_price`,
+  a.`car_image`,
+ a.flag_with_bbm,
+  a.flag_with_driver,
+  a.seat,
+  a.is_have_ac,
+  a.is_have_radio,
+  a.is_have_baggage,
+  b.`car_type_name`,
+  c.`nopol`,
+  c.`car_color`,
+  e.`driver_id`,
+  e.`driver_name`,
+  e.`driver_photo`,
+  e.`phone_number`
+FROM
+  car AS a 
+  INNER JOIN car_type AS b 
+    ON a.`car_type_id` = b.`car_type_id` 
+  LEFT JOIN car_detail AS c 
+    ON a.`car_id` = c.`car_id`
+    LEFT JOIN car_driver_relation AS d ON c.`car_detail_id` = d.`car_detail_id`
+    LEFT JOIN driver AS e ON d.`driver_id` = e.`driver_id`
+WHERE a.`is_active` = 1 
+  AND c.is_active = 1 
+  AND d.is_booked = 0" 
+				deltaQuery="SELECT 
+  c.`car_detail_id` AS id,
+  a.`car_name`,
+  a.car_id,
+  a.`car_type_id`,
+  a.`car_year`,
+  a.`default_price`,
+  a.`car_image`,
+ a.flag_with_bbm,
+  a.flag_with_driver,
+  a.seat,
+  a.is_have_ac,
+  a.is_have_radio,
+  a.is_have_baggage,
+  b.`car_type_name`,
+  c.`nopol`,
+  c.`car_color`,
+  e.`driver_id`,
+  e.`driver_name`,
+  e.`driver_photo`,
+  e.`phone_number`
+FROM
+  car AS a 
+  INNER JOIN car_type AS b 
+    ON a.`car_type_id` = b.`car_type_id` 
+  LEFT JOIN car_detail AS c 
+    ON a.`car_id` = c.`car_id`
+    LEFT JOIN car_driver_relation AS d ON c.`car_detail_id` = d.`car_detail_id`
+    LEFT JOIN driver AS e ON d.`driver_id` = e.`driver_id`
+WHERE a.`is_active` = 1 
+  AND c.is_active = 1 
+  AND d.is_booked = 0">
+		</entity>
+    </document>
+</dataConfig>
+

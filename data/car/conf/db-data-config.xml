@@ -1,0 +1,15 @@
+<dataConfig>
+    <dataSource driver="com.mysql.jdbc.Driver" 
+		url="jdbc:mysql://localhost:3306/gabir" 
+		user="root" 
+		password="G4rudacl0ud" 
+    />
+    <document>
+        <entity name="car" 
+				query="SELECT car_id as id, car_name,car_year FROM car WHERE is_active = 1" 
+				deltaImportQuery="SELECT car_id as id, car_name,car_year FROM car WHERE is_active = 1" 
+				deltaQuery="SELECT car_id as id, car_name,car_year FROM car WHERE is_active = 1">
+		</entity>
+    </document>
+</dataConfig>
+

@@ -1,0 +1,15 @@
+<dataConfig>
+    <dataSource driver="com.mysql.jdbc.Driver" 
+		url="jdbc:mysql://localhost:3306/gabir" 
+		user="root" 
+		password="G4rudacl0ud" 
+    />
+    <document>
+        <entity name="area" 
+		query="SELECT area_id AS id,area_name,province_name FROM regional_area WHERE is_active = 1" 
+	        deltaImportQuer="SELECT area_id AS id,area_name,province_name FROM regional_area WHERE is_active = 1" 
+		deltaQuery="SELECT area_id AS id,area_name,province_name FROM regional_area WHERE is_active = 1">
+		</entity>
+    </document>
+</dataConfig>
+
